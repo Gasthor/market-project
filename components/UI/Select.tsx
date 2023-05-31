@@ -10,7 +10,7 @@ export const Select: FC<Props> = ({
     predetermined
 }) => {
     return(
-        <select className="border my-2 p-2 rounded-xl">
+        <select className="border my-2 p-2 rounded-xl bg-gray-50 border-gray-400 dark:bg-gray-800 dark:border-gray-600">
             <option>{predetermined}</option>
             {
                 options.map(value => (

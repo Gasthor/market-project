@@ -26,7 +26,7 @@ export const PrincipalLayout: FC<Props> = ({
             {imgURL && <meta name="og:image" content={imgURL} />}
         </Head>
         <Navbar/>
-        <main className={`flex min-h-screen flex-col items-center justify-between p-2`}>
+        <main className={`flex min-h-screen flex-col items-center p-2 max-w-7xl mx-auto mt-[60px]`}>
             {children}
         </main>
     </>;
