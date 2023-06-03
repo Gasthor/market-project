@@ -1,9 +1,9 @@
 import { FC } from "react"
 
 interface Props {
-    text : string
-    customize? : string
-    action? : () => void
+    text: string
+    customize?: string
+    action?: () => void
 }
 
 export const Button: FC<Props> = ({
@@ -11,9 +11,11 @@ export const Button: FC<Props> = ({
     customize,
     action
 }) => {
-    return(
+    return (
         <button className={`bg-blue-600 p-2 rounded-xl h-fit my-auto text-sm text-white shadow-lg ${customize}`} onClick={action}>
-            {text}
+            <p>
+                {text}
+            </p>
         </button>
     )
 }
