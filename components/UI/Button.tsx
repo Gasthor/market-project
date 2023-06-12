@@ -13,7 +13,7 @@ export const Button: FC<Props> = ({
 }) => {
     return (
         <button className={`bg-blue-600 p-2 rounded-xl h-fit my-auto text-sm text-white shadow-lg ${customize}`} onClick={action}>
-            <p>
+            <p className=" text-xs md:text-sm">
                 {text}
             </p>
         </button>
